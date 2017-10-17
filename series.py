@@ -74,4 +74,4 @@ if __name__ == '__main__':
     print("Evaluate a series at a given n value, can set starting values.")
     print("""calling sum_series with a value of n = 3, first_num = 4,
      and second_num = 2. Expect an output of 8""")
-    print(sum_series(3))
+    print(sum_series(3, 4, 2))
