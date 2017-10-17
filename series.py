@@ -37,3 +37,22 @@ def lucas(n):
         second_num = temp
 
     return second_num
+
+
+def sum_series(n, first=0, second=1):
+    """Evaluate a series at a given n value, can set starting values."""
+    first_num = first
+    second_num = second
+    temp = 0
+
+    if n == 0:
+        return first
+    if n == 1:
+        return second
+
+    for i in range(1, n):
+        temp = first_num + second_num
+        first_num = second_num
+        second_num = temp
+
+    return second_num
