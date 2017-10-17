@@ -1,1 +1,8 @@
-{}
+{
+  "test_series.py::test_lucas[2-1]": true,
+  "test_series.py::test_lucas[3-2]": true,
+  "test_series.py::test_lucas[4-3]": true,
+  "test_series.py::test_lucas[5-5]": true,
+  "test_series.py::test_lucas[6-8]": true,
+  "test_series.py::test_lucas[7-13]": true
+}
