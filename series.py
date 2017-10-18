@@ -59,19 +59,20 @@ def sum_series(n, first=0, second=1):
 
 
 if __name__ == '__main__':
-    print("This module defines functions that implement mathematical series.")
-    print("fibonacci(n):")
-    print("Return nth value in the fibonacci series.")
-    print("calling finbonacci with a value of 3, expect an output of 2")
-    print(fibonacci(3))
-    print("")
-    print("lucas(n):")
-    print("Return nth value in the lucas series.")
-    print("calling lucas with a value of 3, expect an output of 4")
-    print(lucas(3))
-    print("")
-    print("sum_series(n, first=0, second=1)")
-    print("Evaluate a series at a given n value, can set starting values.")
-    print("""calling sum_series with a value of n = 3, first_num = 4,
-     and second_num = 2. Expect an output of 8""")
-    print(sum_series(3, 4, 2))
+
+    print("""This module defines functions that implement mathematical series
+
+fibonacci(n):
+returns the nth value in the fibonacci series
+calling finbonacci with a value of 3, expect an output of 2
+output is """ + str(fibonacci(3)) + """
+
+lucas(n):
+returns the nth value in the lucas series.
+calling lucas with a value of 3, expect an output of 4
+output is """ + str(lucas(3)) + """
+
+sum_series(n, first=0, second=1)
+Evaluate a series at a given n value, can set starting values.
+calling sum_series with a value of n = 3, first_num = 4, scond_num = 2,
+expect an output of 8, output is """ + str(sum_series(3, 4, 2)))

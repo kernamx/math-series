@@ -1,10 +1,5 @@
-"""testing for series.py."""
+"""Multiple tests to check our output of series functions from series.py."""
 import pytest
-
-
-def test_foo():
-    """It is a test."""
-    assert 1 == 1
 
 
 fibonacci_series = [(0, 0), (1, 1), (2, 1), (3, 2), (4, 3), (5, 5), (6, 8),
@@ -21,27 +16,27 @@ sum_series_values = [(0, 5, 6, 5), (1, 5, 6, 6), (2, 5, 6, 11), (3, 5, 6, 17),
 
 @pytest.mark.parametrize('n, result', fibonacci_series)
 def test_fibonacci(n, result):
-    """Testing fibonacci function."""
+    """A test to see if the fibonacci function works as expected."""
     from series import fibonacci
     assert fibonacci(n) == result
 
 
 @pytest.mark.parametrize('n, result', lucas_series)
 def test_lucas(n, result):
-    """Testing Lucas series."""
+    """A test to see if the lucas function works as expected."""
     from series import lucas
     assert lucas(n) == result
 
 
 @pytest.mark.parametrize('n, first, second, result', sum_series_values)
 def test_sum_series(n, first, second, result):
-    """Testing Lucas series."""
+    """Testing function for sum_series using optional params."""
     from series import sum_series
     assert sum_series(n, first, second) == result
 
 
 @pytest.mark.parametrize('n, result', fibonacci_series)
 def test_sum_series_fibonacci(n, result):
-    """Testing Lucas series."""
+    """Testing function for sum_series without using optional params."""
     from series import sum_series
     assert sum_series(n) == result
